@@ -1,0 +1,157 @@
+* {
+  /* unversal selector */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* global reset, cosi da poter impostare i vari margin e padding che vogliamo */
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(14, 36, 62);
+  border-top: solid 5px white;
+  border-bottom: solid 5px white;
+}
+
+.logo-animation {
+  height: 150px;
+  width: 150px;
+  border: solid 8px white;
+  border-radius: 6px;
+  margin: auto;
+  margin-top: 220px;
+  transition-property: width;
+  animation: esempio 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes esempio {
+  from {
+    width: 146px;
+  }
+  to {
+    width: 320px;
+    border-right: solid 8px white;
+  }
+}
+
+.riga1,
+.riga2 {
+  font-family: sans-serif;
+  color: rgb(192, 26, 26);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 55px;
+  margin-left: 20px;
+  transform: scale(0.94);
+  animation: scale 10s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.riga1 {
+  margin-top: 5px;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  color: white;
+  opacity: 0;
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.corsodi {
+  display: block;
+  margin: auto;
+  opacity: 0;
+  margin-top: -90px;
+  animation: fadein-img 1s 1.4s forwards;
+}
+
+@keyframes fadein-img {
+  100% {
+    opacity: 1;
+  }
+}
+
+.pulsante {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 30px;
+  opacity: 0;
+  animation: fadein-img 1s 1.4s forwards;
+  border-radius: 6px;
+}
+
+.btn:link,
+.btn:visited {
+  border: solid 2px white;
+  transition: border 0.5s;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(14, 36, 62);
+  transition: border 0.5s;
+  border: solid 2px rgb(192, 26, 26);
+  transition: background-color 0.5s;
+}
+.btn:active {
+  background-color: rgb(19, 49, 85);
+  transition: border 0.5s;
+  border: solid 2px rgb(192, 26, 26);
+}
+
+section {
+  border-top: solid 1px rgb(192, 26, 26);
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+li {
+  color: white;
+}
