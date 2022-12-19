@@ -154,6 +154,14 @@ p {
 
 li {
   color: white;
+  font-family: "Work Sans", sans-serif;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 section {
@@ -166,7 +174,6 @@ section {
   grid-template-columns: 2fr 1fr;
   gap: 10px;
   column-gap: 80px;
-  position: relative;
 }
 
 .what-titolo {
@@ -206,4 +213,39 @@ section {
   grid-row: 3 / 5;
   justify-self: end;
   border-radius: 6px;
+}
+
+.for-who {
+  margin-top: -130px;
+  margin-bottom: -100px;
+}
+
+.griglia-who {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  align-content: start;
+}
+
+.a-chi {
+  border-radius: 6px;
+  width: 130px;
+  justify-self: start;
+}
+
+.a1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.a2 {
+  grid-column: 2 / 3;
+  grid-row: 1/2;
+}
+
+.a3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
 }
