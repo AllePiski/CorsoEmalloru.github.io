@@ -27,7 +27,7 @@ body {
 
 @keyframes esempio {
   from {
-    width: 146px;
+    width: 150px;
   }
   to {
     width: 320px;
@@ -248,4 +248,17 @@ section {
   grid-column: 2/3;
   grid-row: 1/2;
   justify-self: center;
+}
+
+.griglia-autor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.titolo-autor {
+}
+
+.desc-autor {
+  grid-row: 2/3;
 }
