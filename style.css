@@ -148,6 +148,10 @@ span:nth-child(6) {
   border: solid 2px rgb(192, 26, 26);
 }
 
+.white-bar {
+  border: solid 4px white;
+}
+
 section {
   border-top: solid 1px rgb(192, 26, 26);
 }
