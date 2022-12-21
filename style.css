@@ -24,7 +24,7 @@ body {
   margin-top: 180px;
   transition-property: width;
   animation: esempio 1s ease forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.4s;
 }
 
 @keyframes esempio {
@@ -46,7 +46,7 @@ body {
   font-size: 55px;
   margin-left: 20px;
   transform: scale(0.94);
-  animation: scale 10s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  animation: scale 8s forwards cubic-bezier(0.5, 1, 0.89, 1);
   text-shadow: none;
 }
 
@@ -66,27 +66,27 @@ span {
 }
 
 span:nth-child(1) {
-  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 span:nth-child(2) {
-  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 span:nth-child(3) {
-  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 span:nth-child(4) {
-  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 span:nth-child(5) {
-  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 span:nth-child(6) {
-  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 @keyframes fade-in {
@@ -102,7 +102,7 @@ span:nth-child(6) {
   margin: auto;
   opacity: 0;
   margin-top: -110px;
-  animation: fadein-img 1s 1.4s forwards;
+  animation: fadein-img 1.2s 1s forwards;
 }
 
 @keyframes fadein-img {
@@ -120,7 +120,7 @@ span:nth-child(6) {
 .btn {
   padding: 10px 30px;
   opacity: 0;
-  animation: fadein-img 1s 1.4s forwards;
+  animation: fadein-img 1.2s 1s forwards;
   border-radius: 15px;
   margin-bottom: 150px;
 }
@@ -148,10 +148,6 @@ span:nth-child(6) {
   border: solid 2px rgb(192, 26, 26);
 }
 
-.white-bar {
-  border: solid 4px white;
-}
-
 section {
   border-top: solid 1px rgb(192, 26, 26);
 }
@@ -164,7 +160,7 @@ p {
   font-family: "Work Sans", sans-serif;
   color: white;
   font-size: 16px;
-  text-shadow: 1px 1px 2px rgb(35, 91, 160);
+  text-shadow: 0.1em 0.1em 0 rgb(9, 22, 39);
   font-weight: lighter;
 }
 
@@ -174,11 +170,12 @@ p {
 
 li {
   color: white;
+  line-height: 1.3;
   font-family: "Work Sans", sans-serif;
   margin-left: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
-  text-shadow: 1px 1px 2px rgb(35, 91, 160);
+  text-shadow: 0.1em 0.1em 0 rgb(9, 22, 39);
 }
 
 li:last-child {
@@ -200,6 +197,10 @@ section {
 .what-titolo {
   margin-top: -130px;
   margin-bottom: -100px;
+}
+
+.p-what {
+  line-height: 1.3;
 }
 
 .p1 {
@@ -277,7 +278,7 @@ section {
   grid-template-columns: 1fr 264px;
   grid-template-rows: 1fr;
   margin-top: 20px;
-  column-gap: 85px;
+  column-gap: 95px;
   margin-bottom: 20px;
 }
 
@@ -290,8 +291,8 @@ section {
 .desc-autor {
   grid-row: 2/3;
   align-self: center;
-  line-height: 1.6;
-  font-size: 18px;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 .img-autor {
@@ -302,28 +303,65 @@ section {
 }
 
 .sezione-prezzo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-rows: 188px 188px;
   margin-top: 50px;
 }
 
-h3 {
-  text-align: center;
-  margin-top: 20px;
+h2 {
+  margin-top: 30px;
   color: white;
   font-weight: lighter;
+  grid-column: 1/2;
+  margin-right: 50px;
+  align-self: start;
 }
 
 .span-h3 {
   opacity: 1;
   color: rgb(192, 26, 26);
+  font-weight: 600;
   animation: none;
 }
 
-.sez-img-prezzo {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.img-prezzo {
+  grid-column: 2/3;
+  grid-row: 1/ 4;
 }
 
-.img-prezzo {
-  image-rendering: optimizeQuality;
+.btn-buy {
+  background-color: rgb(0, 172, 51);
+  padding: 10px;
+  border-radius: 15px;
+  align-self: end;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+
+.btn-buy:link,
+.btn-buy:visited {
+  background-color: rgb(0, 172, 51);
+  border: solid 2px white;
+  transition: border 0.5s;
+  transition: background-color 0.5s;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgb(14, 36, 62);
+}
+
+.btn-buy:hover {
+  background-color: rgb(14, 36, 62);
+  border: solid 2px rgb(192, 26, 26);
+  transition: background-color 0.5s;
+  transition: border 0.5s;
+}
+.btn-buy:active {
+  background-color: rgb(19, 49, 85);
+  transition: border 0.5s;
+  border: solid 2px rgb(192, 26, 26);
 }
