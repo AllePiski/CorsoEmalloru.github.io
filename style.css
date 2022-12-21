@@ -148,6 +148,13 @@ span:nth-child(6) {
   border: solid 2px rgb(192, 26, 26);
 }
 
+.video {
+  display: block;
+  margin: auto;
+  border-radius: 16px;
+  box-shadow: 0px 5px 20px 5px rgba(192, 26, 26, 0.137);
+}
+
 section {
   border-top: solid 1px rgb(192, 26, 26);
 }
