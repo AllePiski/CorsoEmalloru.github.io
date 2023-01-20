@@ -166,9 +166,9 @@ section:last-child {
 p {
   font-family: "Work Sans", sans-serif;
   color: white;
-  font-size: 16px;
-  text-shadow: 0.1em 0.1em 0 rgb(9, 22, 39);
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
   font-weight: lighter;
+  letter-spacing: 1.2px;
 }
 
 .span-bold {
@@ -182,7 +182,7 @@ li {
   margin-left: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
-  text-shadow: 0.1em 0.1em 0 rgb(9, 22, 39);
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 li:last-child {
